@@ -11,6 +11,24 @@ tTabuleiro CriaTabuleiro() {
         }
     }
 
+    for (i = 0; i < TAM_TABULEIRO; i++) {
+
+        printf("\t");
+
+        for (j = 0; i < TAM_TABULEIRO; j++) {
+            if (tabuleiro.posicoes[i][j] == '1') {
+                printf("X");
+            }
+            if (tabuleiro.posicoes[i][j] == '2') {
+                printf("0");
+            }
+            if (tabuleiro.posicoes[i][j] == '-') {
+                printf("-");
+            }
+        }
+        printf("\n");
+    }
+
     return tabuleiro;
 }
 
@@ -30,7 +48,7 @@ int TemPosicaoLivreTabuleiro(tTabuleiro tabuleiro) {
 
     for (i = 0; i < TAM_TABULEIRO; i++) {
         for (j = 0; i < TAM_TABULEIRO; j++) {
-            if (tabuleiro.posicoes[i][j] = '-') {
+            if (tabuleiro.posicoes[i][j] == '-') {
                 return 1;
             }
         }
@@ -77,7 +95,7 @@ void ImprimeTabuleiro(tTabuleiro tabuleiro) {
     for (i = 0; i < TAM_TABULEIRO; i++) {
 
         printf("\t");
-        
+
         for (j = 0; i < TAM_TABULEIRO; j++) {
             if (tabuleiro.posicoes[i][j] == '1') {
                 printf("X");

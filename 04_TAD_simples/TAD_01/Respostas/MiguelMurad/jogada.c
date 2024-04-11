@@ -4,15 +4,15 @@
 
 
 tJogada LeJogada() {
-    tJogada jogada;
+    tJogada jogada; 
 
-    scanf("%d %d", &jogada.x, &jogada.y);
+    printf("Digite uma posicao (x e y):\n");
 
-    if (jogada.x < 0 || jogada.x > 2 || jogada.y > 2 || jogada.y < 0) {
-        jogada.sucesso = 0;
+    if (scanf("%d %d", &jogada.x, &jogada.y) == 2) {
+        jogada.sucesso = 1;
     }
     else {
-        jogada.sucesso = 1;
+        jogada.sucesso = 0;
     }
 
     return jogada;
