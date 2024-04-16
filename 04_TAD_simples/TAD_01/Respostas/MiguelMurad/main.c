@@ -5,7 +5,13 @@
 #include "stdio.h"
 
 int main () {
+    tJogo jogo;
 
+    jogo = CriaJogo();
+
+    while (ContinuaJogo()) {
+        ComecaJogo(jogo);
+    }
 
     return 0;
 }

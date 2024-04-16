@@ -1,34 +1,19 @@
 #include <stdio.h>
 #include "tabuleiro.h"
+#include "string.h"
 
 tTabuleiro CriaTabuleiro() {
     int i = 0, j = 0;
-    tTabuleiro tabuleiro;
+    tTabuleiro tabuleiro; 
 
-    for (i = 0; i < TAM_TABULEIRO; i++) {
-        for (j = 0; i < TAM_TABULEIRO; j++) {
+    tabuleiro.peca1 = 'X';
+    tabuleiro.peca2 = '0';
+    
+    for (i = 0; i < TAM_TABULEIRO ; i++) {
+        for (j = 0; j < TAM_TABULEIRO; j++) {
             tabuleiro.posicoes[i][j] = '-';
         }
     }
-
-    for (i = 0; i < TAM_TABULEIRO; i++) {
-
-        printf("\t");
-
-        for (j = 0; i < TAM_TABULEIRO; j++) {
-            if (tabuleiro.posicoes[i][j] == '1') {
-                printf("X");
-            }
-            if (tabuleiro.posicoes[i][j] == '2') {
-                printf("0");
-            }
-            if (tabuleiro.posicoes[i][j] == '-') {
-                printf("-");
-            }
-        }
-        printf("\n");
-    }
-
     return tabuleiro;
 }
 
@@ -36,7 +21,13 @@ tTabuleiro CriaTabuleiro() {
 tTabuleiro MarcaPosicaoTabuleiro(tTabuleiro tabuleiro, int peca, int x, int y) {
     
     if (EstaLivrePosicaoTabuleiro(tabuleiro, x, y)) {
-        tabuleiro.posicoes[x][y] = peca;
+        if (peca == PECA_1) {
+            tabuleiro.posicoes[y][x] = 'X';
+        }
+        else {
+            tabuleiro.posicoes[y][x] = '0';
+
+        }
     }
 
     return tabuleiro;
@@ -47,7 +38,7 @@ int TemPosicaoLivreTabuleiro(tTabuleiro tabuleiro) {
     int i = 0, j = 0;
 
     for (i = 0; i < TAM_TABULEIRO; i++) {
-        for (j = 0; i < TAM_TABULEIRO; j++) {
+        for (j = 0; j < TAM_TABULEIRO; j++) {
             if (tabuleiro.posicoes[i][j] == '-') {
                 return 1;
             }
@@ -60,8 +51,15 @@ int TemPosicaoLivreTabuleiro(tTabuleiro tabuleiro) {
 
 int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro tabuleiro, int x, int y, int peca) {
     
-    if (tabuleiro.posicoes[x][y] == peca) {
-        return 1;
+    if (peca == PECA_1) { 
+        if (tabuleiro.posicoes[y][x] == 'X') {
+            return 1;
+        }
+    }
+    else {
+        if (tabuleiro.posicoes[y][x] == '0') {
+            return 1;
+        }
     }
 
     return 0;
@@ -70,7 +68,7 @@ int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro tabuleiro, int x, int y, int peca
 
 int EstaLivrePosicaoTabuleiro(tTabuleiro tabuleiro, int x, int y) {
     
-    if (tabuleiro.posicoes[x][y] == '-') {
+    if (tabuleiro.posicoes[y][x] == '-') {
         return 1;
     }
 
@@ -93,22 +91,11 @@ void ImprimeTabuleiro(tTabuleiro tabuleiro) {
 
 
     for (i = 0; i < TAM_TABULEIRO; i++) {
-
         printf("\t");
 
-        for (j = 0; i < TAM_TABULEIRO; j++) {
-            if (tabuleiro.posicoes[i][j] == '1') {
-                printf("X");
-            }
-            if (tabuleiro.posicoes[i][j] == '2') {
-                printf("0");
-            }
-            if (tabuleiro.posicoes[i][j] == '-') {
-                printf("-");
-            }
+        for (j = 0; j < TAM_TABULEIRO; j++) {
+            printf("%c", tabuleiro.posicoes[i][j]);
         }
         printf("\n");
     }
-
-
 }
