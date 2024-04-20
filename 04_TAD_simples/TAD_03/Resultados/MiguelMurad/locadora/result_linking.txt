@@ -1,0 +1,9 @@
+/usr/bin/ld: Resultados/MiguelMurad/locadora/main.o: na função "main":
+main.c:(.text+0x3a): referência não definida para "criarLocadora"
+/usr/bin/ld: main.c:(.text+0xab): referência não definida para "lerCadastroLocadora"
+/usr/bin/ld: main.c:(.text+0x136): referência não definida para "lerAluguelLocadora"
+/usr/bin/ld: main.c:(.text+0x1b7): referência não definida para "lerDevolucaoLocadora"
+/usr/bin/ld: main.c:(.text+0x23c): referência não definida para "ordenarFilmesLocadora"
+/usr/bin/ld: main.c:(.text+0x28a): referência não definida para "consultarEstoqueLocadora"
+/usr/bin/ld: main.c:(.text+0x2f3): referência não definida para "consultarLucroLocadora"
+collect2: error: ld returned 1 exit status
