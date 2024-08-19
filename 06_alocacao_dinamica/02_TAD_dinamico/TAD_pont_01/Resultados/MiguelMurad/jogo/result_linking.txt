@@ -1,0 +1,6 @@
+/usr/bin/ld: Resultados/MiguelMurad/jogo/main.o: na função "main":
+main.c:(.text+0x12): referência não definida para "CriaJogo"
+/usr/bin/ld: main.c:(.text+0x22): referência não definida para "ComecaJogo"
+/usr/bin/ld: main.c:(.text+0x2e): referência não definida para "DestroiJogo"
+/usr/bin/ld: main.c:(.text+0x38): referência não definida para "ContinuaJogo"
+collect2: error: ld returned 1 exit status

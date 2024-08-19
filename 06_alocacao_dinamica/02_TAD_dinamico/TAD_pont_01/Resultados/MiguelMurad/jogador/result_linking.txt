@@ -1,0 +1,12 @@
+/usr/bin/ld: Resultados/MiguelMurad/jogador/jogo.o: na função "CriaJogo":
+jogo.c:(.text+0x56): referência não definida para "CriaJogador"
+/usr/bin/ld: jogo.c:(.text+0x68): referência não definida para "CriaJogador"
+/usr/bin/ld: Resultados/MiguelMurad/jogador/jogo.o: na função "DestroiJogo":
+jogo.c:(.text+0xa5): referência não definida para "DestroiJogador"
+/usr/bin/ld: jogo.c:(.text+0xb5): referência não definida para "DestroiJogador"
+/usr/bin/ld: Resultados/MiguelMurad/jogador/jogo.o: na função "ComecaJogo":
+jogo.c:(.text+0xfc): referência não definida para "JogaJogador"
+/usr/bin/ld: jogo.c:(.text+0x116): referência não definida para "VenceuJogador"
+/usr/bin/ld: jogo.c:(.text+0x158): referência não definida para "JogaJogador"
+/usr/bin/ld: jogo.c:(.text+0x172): referência não definida para "VenceuJogador"
+collect2: error: ld returned 1 exit status
