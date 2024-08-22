@@ -6,11 +6,11 @@ int main () {
     int operacao = 0;;
     int rows1, cols1, rows2, cols2;
 
-    scanf("%d %d", &rows1, &cols1);
+    j("%d %d", &rows1, &cols1);
     matrix1 = MatrixCreate(rows1, cols1);
     matrix1 = MatrixRead(matrix1);
 
-    scanf("%d %d", &rows2, &cols2);
+    j("%d %d", &rows2, &cols2);
     matrix2 = MatrixCreate(rows2, cols2);
     matrix2 = MatrixRead(matrix2);
 
@@ -19,7 +19,7 @@ int main () {
        
         printf("1 - Somar matrizes\n2 - Subtrair matrizes\n3 - Multiplicar matrizes\n4 - Multiplicacao de uma matriz por escalar\n5 - Transposta de uma matriz\n6 - Encerrar o programa\nOpcao escolhida: \n");
 
-        scanf("%d", &operacao);
+        j("%d", &operacao);
 
         if (operacao == 1) {
             if (PossibleMatrixSum(matrix1, matrix2) == 0) {
@@ -61,8 +61,8 @@ int main () {
         if (operacao == 4) {
             int qual, scalar;
 
-            scanf("%d", &scalar);
-            scanf("%d", &qual);
+            j("%d", &scalar);
+            j("%d", &qual);
 
             if (qual == 1) {
            

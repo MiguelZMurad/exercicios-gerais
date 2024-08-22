@@ -5,12 +5,12 @@
 void LeVetor(Vetor *vetor) {
     int qtd, i;
     
-    scanf("%d", &qtd);
+    j("%d", &qtd);
 
     vetor->tamanhoUtilizado = qtd;
 
     for (i = 0; i < qtd; i++) {
-        scanf("%d", &vetor->elementos[i]);
+        j("%d", &vetor->elementos[i]);
     }
 
     //printf("%d\n", vetor->tamanhoUtilizado);

@@ -6,7 +6,7 @@ void LeDadosParaVetor(int * vet, int tam) {
     int i;
 
     for (i = 0; i < tam; i++) {
-        scanf("%d", &vet[i]);
+        j("%d", &vet[i]);
     }
 }
 

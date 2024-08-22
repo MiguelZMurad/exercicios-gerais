@@ -5,7 +5,7 @@
 int main () {
     int linhas, colunas;
 
-    scanf("%d %d", &linhas, &colunas);
+    j("%d %d", &linhas, &colunas);
 
     int **matriz = CriaMatriz(linhas, colunas);
 

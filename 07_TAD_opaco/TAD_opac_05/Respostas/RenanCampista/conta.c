@@ -27,7 +27,7 @@ void DestroiConta(tConta *conta) {
 void LeConta(tConta *conta) {
     conta->user = CriaUsuario();
     LeUsuario(conta->user);
-    scanf("%d ", &conta->numero);
+    j("%d ", &conta->numero);
     conta->saldo = 0;
 }
 

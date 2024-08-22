@@ -10,15 +10,15 @@ int main () {
     int numero;
     float valor;
 
-    scanf("%d", &qtd);
+    j("%d", &qtd);
     tConta conta[qtd];
     tUsuario user[qtd];
 
     while (1) {
-        scanf("%d", &comando);
+        j("%d", &comando);
 
         if (comando == 1) {
-            scanf("%d %f", &numero, &valor);
+            j("%d %f", &numero, &valor);
 
             for (j = 0; j < qtd; j++) {
                 if (VerificaConta(conta[j], numero)) {
@@ -28,7 +28,7 @@ int main () {
         }
 
         if (comando == 2) {
-            scanf("%d %f", &numero, &valor);
+            j("%d %f", &numero, &valor);
 
             for (j = 0; j < qtd; j++) {
                 if (VerificaConta(conta[j], numero)) {
@@ -38,7 +38,7 @@ int main () {
         }
 
         if (comando == 3) {
-            scanf("\n%s %s %d", nome, cpf, &numero);
+            j("\n%s %s %d", nome, cpf, &numero);
 
             user[i] = CriaUsuario(nome, cpf);
             conta[i] = CriaConta(numero, user[i]);

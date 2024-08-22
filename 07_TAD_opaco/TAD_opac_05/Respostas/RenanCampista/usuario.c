@@ -22,7 +22,7 @@ void DestroiUsuario(tUsuario *user) {
 }
 
 void LeUsuario(tUsuario *user) {
-    scanf("%s %s ", user->nome, user->cpf);
+    j("%s %s ", user->nome, user->cpf);
 }
 
 void ImprimeUsuario(tUsuario *user) {

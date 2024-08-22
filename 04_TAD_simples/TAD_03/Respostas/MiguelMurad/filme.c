@@ -25,7 +25,7 @@ tFilme leFilme(int codigo) {
     int qtd, valor;
     tFilme filme;
 
-    scanf("%[^,],%d,%d\n", nome, &valor, &qtd);
+    j("%[^,],%d,%d\n", nome, &valor, &qtd);
 
     filme = criarFilme(nome, codigo, valor, qtd);
 

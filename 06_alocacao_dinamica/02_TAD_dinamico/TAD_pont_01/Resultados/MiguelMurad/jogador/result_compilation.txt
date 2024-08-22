@@ -1,0 +1,13 @@
+jogador.c: In function ‘JogaJogador’:
+jogador.c:26:5: error: unknown type name ‘tJogada’; did you mean ‘tJogador’?
+   26 |     tJogada *jogada = CriaJogada();
+      |     ^~~~~~~
+      |     tJogador
+jogador.c:26:23: warning: implicit declaration of function ‘CriaJogada’; did you mean ‘CriaJogador’? [-Wimplicit-function-declaration]
+   26 |     tJogada *jogada = CriaJogada();
+      |                       ^~~~~~~~~~
+      |                       CriaJogador
+jogador.c:26:23: warning: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+jogador.c:28:5: warning: implicit declaration of function ‘LeJogada’ [-Wimplicit-function-declaration]
+   28 |     LeJogada(jogada);
+      |     ^~~~~~~~

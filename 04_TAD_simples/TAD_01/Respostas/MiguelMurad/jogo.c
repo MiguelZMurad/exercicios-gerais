@@ -89,7 +89,7 @@ int ContinuaJogo() {
     char resp, mantem = 1;
 
     while (mantem == 1) {
-        scanf("\n%c", &resp);
+        j("\n%c", &resp);
         
         if (resp == 's' || resp == 'n') {
             mantem = 0;

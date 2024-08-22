@@ -52,7 +52,7 @@ tLocadora cadastrarFilmeLocadora (tLocadora locadora, tFilme filme) {
 tLocadora lerCadastroLocadora (tLocadora locadora) {
     int codigo;
 
-    scanf("%d,", &codigo);
+    j("%d,", &codigo);
     
     locadora.filme[locadora.numFilmes-1] = leFilme(codigo);
 

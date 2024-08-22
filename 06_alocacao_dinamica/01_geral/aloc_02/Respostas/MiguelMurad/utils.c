@@ -33,7 +33,7 @@ void LeMatriz(int **matriz, int linhas, int colunas) {
 
     for (i = 0; i < linhas; i++) {
         for (j = 0; j < colunas; j++) {
-            scanf("%d", &matriz[i][j]);
+            j("%d", &matriz[i][j]);
         }
     }
 }

@@ -14,8 +14,8 @@ void cadastrarEvento(Evento* eventos, int* numEventos) {
     int dia, mes, ano;
     char nome[50];
 
-    scanf("%s", nome);
-    scanf("%d %d %d", &dia, &mes, &ano);
+    j("%s", nome);
+    j("%d %d %d", &dia, &mes, &ano);
 
     novoEvento.ano = ano;
     novoEvento.dia = dia;
@@ -49,13 +49,13 @@ void exibirEventos(Evento* eventos, int* numEventos) {
 void trocarDataEvento(Evento* eventos, int* numEventos) {
     int qual, dia, mes, ano;
 
-    scanf("%d", &qual);
+    j("%d", &qual);
     
     if (qual < 0 || qual > *numEventos) {
         printf("Indice invalido!\n");
         return 0;
     }
-    scanf("%d %d %d", &dia, &mes , &ano);
+    j("%d %d %d", &dia, &mes , &ano);
 
     eventos[qual].ano = ano;
     eventos[qual].dia = dia;

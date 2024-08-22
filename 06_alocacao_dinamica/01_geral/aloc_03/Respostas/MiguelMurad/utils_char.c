@@ -22,7 +22,7 @@ void LeVetor(char *vetor, int tamanho) {
     char c;
 
     for (i = 0; i < tamanho; i++) {
-        scanf("%c", &c);
+        j("%c", &c);
 
         if (c != '\n') {
             vetor[i] = c;
@@ -33,10 +33,10 @@ void LeVetor(char *vetor, int tamanho) {
         }
     }
 
-    printf("AGORA:");
-    for (i = 0; i < tamanho; i++) {
+    //printf("AGORA:");
+    /*for (i = 0; i < tamanho; i++) {
         printf("%c", vetor[i]);
-    }
+    }*/
 }
 
 
@@ -45,13 +45,14 @@ void ImprimeString(char *vetor, int tamanho) {
 
     /*for (i = 0; i < tamanho; i++) {
         printf("_");
-    }
+    }*/
 
-    printf("\n");*/
 
     for (i = 0; i < tamanho; i++) {
         printf("%c", vetor[i]);
     }
+
+    printf("\n");
 }
 
 

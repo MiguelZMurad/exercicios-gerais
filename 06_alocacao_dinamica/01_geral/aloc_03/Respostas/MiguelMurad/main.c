@@ -5,11 +5,14 @@
 int main () {
     int qtd;
 
-    scanf("%d", &qtd);
+    j("%d\n", &qtd);
 
     char *vet = CriaVetor(qtd);
 
+    ImprimeString(vet, qtd);
+
     LeVetor(vet, qtd);
+    //printf("\n%s\n", vet);
 
     ImprimeString(vet, qtd);
 

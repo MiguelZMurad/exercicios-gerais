@@ -2,6 +2,7 @@
 #define _JOGADOR_H
 
 #include "tabuleiro.h"
+#include "jogada.h"
 
 
 #define ID_JOGADOR_1 1

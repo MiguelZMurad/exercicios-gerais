@@ -7,7 +7,7 @@ int main () {
     char nome[STRING_MAX], diretor[STRING_MAX], c1[STRING_MAX], c2[STRING_MAX], c3[STRING_MAX];
     int m1, m2, m3;
 
-    scanf("%d", &qtd);
+    j("%d", &qtd);
 
     tDepartamento dep[qtd];
 
@@ -16,13 +16,13 @@ int main () {
     for (i = 0; i < qtd; i++) {
         agr = i;
 
-        scanf("%s\n", nome);
-        scanf("%s\n", diretor);
-        scanf("%s\n", c1);
-        scanf("%s\n", c2);
-        scanf("%s\n", c3);
+        j("%s\n", nome);
+        j("%s\n", diretor);
+        j("%s\n", c1);
+        j("%s\n", c2);
+        j("%s\n", c3);
 
-        scanf("%d %d %d", &m1, &m2, &m3);
+        j("%d %d %d", &m1, &m2, &m3);
 
         if (m1 >= 0 && m1 <= 10 && m2 >= 0 && m2 <= 10 && m3 >= 0 && m3 <= 10) {
             dep[i] = CriaDepartamento(c1, c2, c3, nome, m1, m2, m3, diretor);

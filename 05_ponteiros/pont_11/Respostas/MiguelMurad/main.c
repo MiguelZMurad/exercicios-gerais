@@ -50,7 +50,7 @@ int main () {
     float result;
 
     while (1) {
-        scanf("%c\n", &op);
+        j("%c\n", &op);
 
         if (op == 'f') {
             break;
@@ -58,7 +58,7 @@ int main () {
 
         sinal = QualSinal(op);
 
-        scanf("%f %f\n", &num1, &num2);
+        j("%f %f\n", &num1, &num2);
 
         switch (op) {
             case 'a':

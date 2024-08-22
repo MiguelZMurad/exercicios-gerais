@@ -8,7 +8,7 @@
 tEleicao InicializaEleicao() {
     int i, qtdT, qtdP = 0, qtdG = 0, pre = 0, gov = 0;
 
-    scanf("%d", &qtdT);
+    j("%d", &qtdT);
     tCandidato candidato[qtdT];
 
 
@@ -63,7 +63,7 @@ tEleicao InicializaEleicao() {
 tEleicao RealizaEleicao(tEleicao eleicao) {
     int i, j, qtd, flagG = 0, flagP = 0;
 
-    scanf("%d", &qtd);
+    j("%d", &qtd);
 
     eleicao.totalEleitores = qtd;
 

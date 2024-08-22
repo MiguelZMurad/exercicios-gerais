@@ -7,7 +7,7 @@ int main() {
     char opcao;
 
     while(1) {
-        scanf("%c ", &opcao);
+        j("%c ", &opcao);
         
         if(opcao == 'A') {
             AbreContaBanco(banco);

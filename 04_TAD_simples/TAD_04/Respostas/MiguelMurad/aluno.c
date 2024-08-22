@@ -26,7 +26,7 @@ tAluno LeAluno() {
     char nome[50];
     int matricula, n1, n2, n3;
 
-    scanf("\n%[^\n]\n%d %d %d %d", nome, &matricula, &n1, &n2, &n3);
+    j("\n%[^\n]\n%d %d %d %d", nome, &matricula, &n1, &n2, &n3);
 
     aluno = CriaAluno(nome, matricula, n1, n2 , n3);
 

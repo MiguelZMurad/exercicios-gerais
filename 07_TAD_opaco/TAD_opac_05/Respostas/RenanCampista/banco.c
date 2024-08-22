@@ -46,7 +46,7 @@ void AbreContaBanco(tBanco *banco) {
 void SaqueContaBanco(tBanco *banco) {
     int numConta;
     float valor;
-    scanf("%d %f ", &numConta, &valor);
+    j("%d %f ", &numConta, &valor);
     for (int i = 0; i < banco->qtdContas; i++) {
         if (VerificaConta(banco->contas[i], numConta)) {
             SaqueConta(banco->contas[i], valor);
@@ -57,7 +57,7 @@ void SaqueContaBanco(tBanco *banco) {
 void DepositoContaBanco(tBanco *banco) {
     int numConta;
     float valor;
-    scanf("%d %f ", &numConta, &valor);
+    j("%d %f ", &numConta, &valor);
     for (int i = 0; i < banco->qtdContas; i++) {
         if (VerificaConta(banco->contas[i], numConta)) {
             DepositoConta(banco->contas[i], valor);
@@ -68,7 +68,7 @@ void DepositoContaBanco(tBanco *banco) {
 void TransferenciaContaBanco(tBanco *banco) {
     int numContaOrigem, numContaDestino;
     float valor;
-    scanf("%d %d %f ", &numContaDestino, &numContaOrigem, &valor);
+    j("%d %d %f ", &numContaDestino, &numContaOrigem, &valor);
     tConta *contaOrigem = NULL;
     tConta *contaDestino = NULL;
     for (int i = 0; i < banco->qtdContas; i++) {

@@ -21,7 +21,7 @@ void LeJogada(tJogada* jogada) {
 
     printf("Digite uma posicao (x e y):\n");
 
-    scanf("%d %d", &x, &y);
+    j("%d %d", &x, &y);
 
     jogada->x = x;
     jogada->y = y;

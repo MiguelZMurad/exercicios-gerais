@@ -5,7 +5,7 @@
 int main () {
     int tam;
 
-    scanf("%d", &tam);
+    j("%d", &tam);
 
     int *v = CriaVetor(tam);
 

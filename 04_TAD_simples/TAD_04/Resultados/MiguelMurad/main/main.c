@@ -5,7 +5,7 @@
 int main () {
     int qtd, i, j;
 
-    scanf("%d", &qtd);
+    j("%d", &qtd);
 
     tAluno aluno[qtd];
     tAluno temp;

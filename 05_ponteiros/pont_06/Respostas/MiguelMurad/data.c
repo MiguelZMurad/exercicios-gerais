@@ -13,7 +13,7 @@ void InicializaDataParam( int dia, int mes, int ano, tData *data) {
 void LeData( tData *data ) {
     int dia, mes, ano;
 
-    scanf("%d %d %d", &dia, &mes, &ano);
+    j("%d %d %d", &dia, &mes, &ano);
 
     InicializaDataParam(dia, mes, ano, data);
 }

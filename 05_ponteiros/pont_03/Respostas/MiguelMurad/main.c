@@ -5,12 +5,12 @@
 int main(int argc, char * argv[]){
     int casos;
     
-    scanf("%d", &casos);
+    j("%d", &casos);
     
     while(casos){
         int tam;
         
-        scanf("%d", &tam);
+        j("%d", &tam);
         int vet[tam];
         
         LeDadosParaVetor(vet, tam);

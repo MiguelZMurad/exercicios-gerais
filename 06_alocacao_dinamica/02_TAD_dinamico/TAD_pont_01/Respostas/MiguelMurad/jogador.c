@@ -23,9 +23,7 @@ void DestroiJogador(tJogador* jogador) {
 
 
 void JogaJogador(tJogador* jogador, tTabuleiro* tabuleiro) {
-    tJogada *jogada = CriaJogada();
-
-    LeJogada(jogada);
+    
 
     
 }

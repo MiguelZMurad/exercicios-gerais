@@ -25,7 +25,7 @@ tCandidato LeCandidato() {
     int id;
     tCandidato candidato;
 
-    scanf("\n%[^,], %[^,], %c, %d\n", nome, partido, &cargo, &id);
+    j("\n%[^,], %[^,], %c, %d\n", nome, partido, &cargo, &id);
 
     candidato = CriaCandidato(nome, partido, cargo, id);
 

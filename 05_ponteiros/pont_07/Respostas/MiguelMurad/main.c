@@ -18,7 +18,7 @@ int main() {
     imprimeMenu(); 
  
     while (opcao != 5) { 
-        scanf("%d", &opcao); 
+        j("%d", &opcao); 
  
         switch (opcao) { 
             case 1: 
@@ -32,7 +32,7 @@ int main() {
                 break; 
             case 4: 
                 int indiceA, indiceB; 
-                scanf("%d %d", &indiceA, &indiceB);  
+                j("%d %d", &indiceA, &indiceB);  
                 trocarIndicesEventos(eventos, &indiceA, &indiceB, &numEventos); 
                 break; 
             case 5: 

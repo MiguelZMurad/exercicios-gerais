@@ -17,7 +17,7 @@ tMatrix MatrixRead(tMatrix matrix) {
 
     for (i = 0; i < matrix.rows; i++) {
         for (j = 0; j < matrix.cols; j++) {
-            scanf("%d", &matrix.data[i][j]);
+            j("%d", &matrix.data[i][j]);
         }
     }
 

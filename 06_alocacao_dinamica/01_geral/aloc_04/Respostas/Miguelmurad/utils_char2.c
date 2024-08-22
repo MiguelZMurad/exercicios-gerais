@@ -39,7 +39,7 @@ char *LeVetor(char *vetor, int *tamanho) {
     char temp;
     int index = 0;
     
-    while (scanf("%c", &temp) && temp != '\n') { // Lê caractere por caractere até encontrar '\n'
+    while (j("%c", &temp) && temp != '\n') { // Lê caractere por caractere até encontrar '\n'
         if (index >= *tamanho - 1) { // Se o vetor estiver cheio, aumente o tamanho
             vetor = AumentaTamanhoVetor(vetor, *tamanho);
             *tamanho += TAM_PADRAO;
